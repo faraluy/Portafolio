@@ -45,7 +45,7 @@ tab1, tab2, tab3 = st.tabs(["📄 Información", "📸 Fotos", "🎬 Videos"])
 
 # --- TAB 1: INFORMACIÓN PERSONAL ---
 with tab1:
-    st.header("🙋‍♂️ Acerca de mí")
+    st.header("Acerca de mí")
     st.write("""
     Soy un estudiante de Periodismo en busca de oportunidades para aplicar mi creatividad y responsabilidad en el ámbito laboral. Me apasiona crear contenido audiovisual, comunicar ideas con impacto y aprender constantemente para aportar a cada proyecto con entusiasmo.
     """)
