@@ -5,7 +5,7 @@ from PIL import Image
 
 # --- Configuración de la página ---
 st.set_page_config(
-    page_title="Portafolio | Fabrizio Ramírez Luy",
+    page_title="Portafolio | Fabrizio Ramirez Luy",
     page_icon="📝",
     layout="wide"
 )
@@ -32,7 +32,7 @@ def set_background(image_file):
 
 # --- Llamar a la función con la imagen de fondo ---
 # --- Encabezado ---
-st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Sebastián Fabrizio Ramírez Luy</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Sebastian Fabrizio Ramirez Luy</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'>Estudiante de Periodismo | Creador de contenido | Editor de videos</h4>", unsafe_allow_html=True)
 # --- Fotos de presentación ---
 fotos_presentacion = ["pictures/foto1.jpeg", "pictures/foto2.jpeg", "pictures/foto3.jpeg", "pictures/foto4.jpeg"]
@@ -51,7 +51,7 @@ fotos_presentacion = [
     "pictures/foto4.jpeg."
 ]
 # --- Sección: Acerca de mí ---
-st.header("🙋‍♂️ Acerca de mí")
+st.header("Acerca de mí")
 st.write("""
 Soy un estudiante de Periodismo en busca de oportunidades para aplicar mi creatividad y responsabilidad en el ámbito laboral. Me apasiona crear contenido audiovisual, comunicar ideas con impacto y aprender constantemente para aportar a cada proyecto con entusiasmo.
 """)
