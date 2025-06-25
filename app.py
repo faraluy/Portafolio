@@ -92,7 +92,7 @@ with tab2:
     st.header("📸 Galería de trabajos")
     ruta_imagenes = "imagenes"
     if os.path.exists(ruta_imagenes):
-        imagenes = [img for img in os.listdir(ruta_imagenes) if img.endswith(("jpg", "jpeg", "png"))]
+        imagenes = [img for img in os.listdir(ruta_imagenes) if img.endswith(("jpg", "jpeg", "png", "JPG"))]
         if imagenes:
             for i in range(0, len(imagenes), 3):
                 cols = st.columns(3)
