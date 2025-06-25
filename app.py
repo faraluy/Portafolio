@@ -9,7 +9,13 @@ st.set_page_config(
     page_icon="📝",
     layout="wide"
 )
-
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #f0f8ff;  /* Azul claro */
+    }
+    </style>
+""", unsafe_allow_html=True)
 # --- Función para fondo personalizado ---
 def set_background(image_file):
     if os.path.exists(image_file):
