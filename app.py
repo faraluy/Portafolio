@@ -35,9 +35,6 @@ def set_background(image_file):
 st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Sebastián Fabrizio Ramírez Luy</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'>Estudiante de Periodismo | Creador de contenido | Editor de videos</h4>", unsafe_allow_html=True)
 # --- Fotos de presentación ---
-st.markdown("### ")
-st.markdown("#### 🖼️ Presentación visual")
-
 fotos_presentacion = ["pictures/foto1.jpeg", "pictures/foto2.jpeg", "pictures/foto3.jpeg", "pictures/foto4.jpeg"]
 
 cols = st.columns(4)
