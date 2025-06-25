@@ -65,23 +65,41 @@ else:
 # --- Pie de página ---
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>© 2025 Sebastián Fabrizio Ramírez Luy</p>", unsafe_allow_html=True)
+st.set_page_config(
+    page_title="Portafolio | Fabrizio Ramírez Luy",
+    page_icon="📝",
+    layout="wide"
+)
+import streamlit as st
 import base64
+import os
+from PIL import Image
 
+# --- Configuración de la página ---
+st.set_page_config(
+    page_title="Portafolio | Fabrizio Ramírez Luy",
+    page_icon="📝",
+    layout="wide"
+)
+# --- Función para fondo personalizado ---
 def set_background(image_file):
-    with open(image_file, "rb") as f:
-        data = f.read()
-        encoded = base64.b64encode(data).decode()
-    page_bg_img = f"""
-    <style>
-    .stApp {{
-        background-image: url("data:image/jpg;base64,{encoded}");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }}
-    </style>
-    """
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    if os.path.exists(image_file):
+        with open(image_file, "rb") as f:
+            data = f.read()
+            encoded = base64.b64encode(data).decode()
+        page_bg_img = f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/jpg;base64,{encoded}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }}
+        </style>
+        """
+        st.markdown(page_bg_img, unsafe_allow_html=True)
+    else:
+        st.warning(f"❗ Imagen de fondo no encontrada: {image_file}")
 
-set_background("imagenes/fondo.jpg")  # cambia esto al nombre de tu imagen
-
+# --- Llamar a la función con la imagen correcta ---
+set_background("imagenes/fondo.jpg")
