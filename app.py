@@ -22,7 +22,6 @@ st.markdown("""
 # --- Encabezado ---
 st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Sebastian Fabrizio Ramirez Luy</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'>Estudiante de Periodismo | Creador de contenido | Editor de videos</h4>", unsafe_allow_html=True)
-
 # --- Fotos de presentación (fila de 4) ---
 fotos_presentacion = [
     "pictures/foto1.jpeg",
