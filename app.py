@@ -34,7 +34,25 @@ def set_background(image_file):
 # --- Encabezado ---
 st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Sebastián Fabrizio Ramírez Luy</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'>Estudiante de Periodismo | Creador de contenido | Editor de videos</h4>", unsafe_allow_html=True)
+# --- Fotos de presentación ---
+st.markdown("### ")
+st.markdown("#### 🖼️ Presentación visual")
 
+fotos_presentacion = ["pictures/foto1.jpg", "pictures/foto2.jpg", "pictures/foto3.jpg", "pictures/foto4.jpg"]
+
+cols = st.columns(4)
+for i in range(4):
+    if os.path.exists(fotos_presentacion[i]):
+        image = Image.open(fotos_presentacion[i])
+        cols[i].image(image, use_column_width=True)
+    else:
+        cols[i].info(f"Falta {fotos_presentacion[i]}")
+fotos_presentacion = [
+    "pictures/nombre_de_mi_foto1.jpg",
+    "pictures/otra_foto2.jpg",
+    "pictures/selfie_foto3.png",
+    "pictures/fabrizio_foto4.jpg"
+]
 # --- Sección: Acerca de mí ---
 st.header("🙋‍♂️ Acerca de mí")
 st.write("""
