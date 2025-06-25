@@ -110,7 +110,7 @@ with tab2:
 # --- TAB 3: VIDEOS ---
 with tab3:
     st.header("🎬 Mis videos")
-    st.subheader("📂 Video subido al repositorio (opcional)")
+    st.subheader("Videos")
     video_path = "videos/2024.mov"
     if os.path.exists(video_path):
         with open(video_path, "rb") as f:
