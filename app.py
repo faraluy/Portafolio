@@ -110,12 +110,8 @@ with tab2:
 # --- TAB 3: VIDEOS ---
 with tab3:
     st.header("🎬 Mis videos")
-
-    st.subheader("📺 Video desde YouTube")
-    st.video("https://www.youtube.com/watch?v=tu_video_aqui")  # Reemplaza con tu enlace real
-
     st.subheader("📂 Video subido al repositorio (opcional)")
-    video_path = "videos/mi_video.mp4"
+    video_path = "videos/2024.mov"
     if os.path.exists(video_path):
         with open(video_path, "rb") as f:
             st.video(f.read())
