@@ -99,9 +99,7 @@ with tab2:
                 for j in range(3):
                     if i + j < len(imagenes):
                         image = Image.open(os.path.join(ruta_imagenes, imagenes[i + j]))
-                        nombre = os.path.splitext(imagenes[i + j])[0]  # quita la extensión
-titulo = nombre.replace("_", " ").title()      # reemplaza guiones bajos y capitaliza
-cols[j].image(image, use_container_width=True, caption=titulo)
+                       cols[j].image(image, use_container_width=True, caption=imagenes[i + j])
         else:
             st.info("No hay imágenes en la carpeta 'imagenes/'.")
     else:
