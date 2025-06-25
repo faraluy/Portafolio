@@ -48,7 +48,7 @@ for i in range(4):
     else:
         cols[i].info(f"Falta {fotos_presentacion[i]}")
 fotos_presentacion = [
-    "pictures/nombre_de_mi_foto1.jpg",
+    "pictures/nombre_de_mi_foto1.jpeg",
     "pictures/otra_foto2.jpeg.",
     "pictures/selfie_foto3.jpeg.",
     "pictures/fabrizio_foto4.jpeg."
