@@ -38,7 +38,7 @@ st.markdown("<h4 style='text-align: center;'>Estudiante de Periodismo | Creador 
 st.markdown("### ")
 st.markdown("#### 🖼️ Presentación visual")
 
-fotos_presentacion = ["pictures/foto1.jpg", "pictures/foto2.jpg", "pictures/foto3.jpg", "pictures/foto4.jpg"]
+fotos_presentacion = ["pictures/foto1.jpeg", "pictures/foto2.jpeg", "pictures/foto3.jpeg", "pictures/foto4.jpeg"]
 
 cols = st.columns(4)
 for i in range(4):
