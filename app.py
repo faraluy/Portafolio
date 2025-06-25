@@ -48,10 +48,10 @@ for i in range(4):
     else:
         cols[i].info(f"Falta {fotos_presentacion[i]}")
 fotos_presentacion = [
-    "pictures/nombre_de_mi_foto1.jpg.jpeg",
-    "pictures/otra_foto2.jpg.jpeg",
-    "pictures/selfie_foto3.jpg.jpeg",
-    "pictures/fabrizio_foto4.jpg.jpge"
+    "pictures/nombre_de_mi_foto1.jpg",
+    "pictures/otra_foto2.jpg.",
+    "pictures/selfie_foto3.jpg.",
+    "pictures/fabrizio_foto4.jpg."
 ]
 # --- Sección: Acerca de mí ---
 st.header("🙋‍♂️ Acerca de mí")
