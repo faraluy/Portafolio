@@ -65,4 +65,23 @@ else:
 # --- Pie de página ---
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>© 2025 Sebastián Fabrizio Ramírez Luy</p>", unsafe_allow_html=True)
+import base64
+
+def set_background(image_file):
+    with open(image_file, "rb") as f:
+        data = f.read()
+        encoded = base64.b64encode(data).decode()
+    page_bg_img = f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{encoded}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+set_background("imagenes/fondo.jpg")  # cambia esto al nombre de tu imagen
 
