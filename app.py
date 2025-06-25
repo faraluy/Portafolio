@@ -44,7 +44,7 @@ cols = st.columns(4)
 for i in range(4):
     if os.path.exists(fotos_presentacion[i]):
         image = Image.open(fotos_presentacion[i])
-        cols[i].image(image, use_column_width=True)
+        cols[i].image(image, use_container_width=True)
     else:
         cols[i].info(f"Falta {fotos_presentacion[i]}")
 fotos_presentacion = [
