@@ -31,7 +31,7 @@ def set_background(image_file):
         st.warning(f"❗ Imagen de fondo no encontrada: {image_file}")
 
 # --- Llamar a la función con la imagen de fondo ---
-set_background("pictures/background.jpg")
+set_background("pictures/pl.jpg.jpg")
 # --- Encabezado ---
 st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Sebastián Fabrizio Ramírez Luy</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'>Estudiante de Periodismo | Creador de contenido | Editor de videos</h4>", unsafe_allow_html=True)
