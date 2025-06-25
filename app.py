@@ -110,18 +110,14 @@ with tab2:
 # --- TAB 3: VIDEOS ---
 with tab3:
     st.header("🎬 Mis videos")
-    st.subheader("Video 2024")
-
+    st.subheader("Videos")
     video_path = "videos/2024.mov"
-
     if os.path.exists(video_path):
-        st.markdown(f"""
-        <div style="display: flex; justify-content: center;">
-            <video width="400" controls>
-                <source src="{video_path}" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
-        </div>
-        """, unsafe_allow_html=True)
+        with open(video_path, "rb") as f:
+            st.video(f.read())
     else:
-        st.info("Sube un archivo .mp4 o .mov a la carpeta 'videos/' para que aparezca aquí.")
+        st.info("Sube un archivo .mp4 a la carpeta 'videos/' para que aparezca aquí.")
+
+# --- Pie de página ---
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>© 2025 Sebastián Fabrizio Ramírez Luy</p>", unsafe_allow_html=True)
